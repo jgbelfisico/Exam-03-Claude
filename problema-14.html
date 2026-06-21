@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Problema 14 | Examen 03</title>
+  <meta name="description" content="Problema 14 | Examen 03" />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Problema 14 | Examen 03" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Problema 14 | Examen 03" />
+  
+  
+  
+
+<meta name="author" content="John Rodríguez" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="problema-13.html"/>
+<link rel="next" href="problema-15.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="estilo.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html"><i class="fa fa-check"></i>Problema 01</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#enunciado"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#marco-conceptual"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#datos-y-supuestos"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#estrategia-de-soluci%C3%B3n"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#soluci%C3%B3n-paso-a-paso-detallada"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-1-plantear-la-ecuaci%C3%B3n-de-la-mediana-para-el-grupo"><i class="fa fa-check"></i>Paso 1 — Plantear la ecuación de la mediana para el grupo</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-2-resolver-la-cuadr%C3%A1tica-en-sqrtp"><i class="fa fa-check"></i>Paso 2 — Resolver la cuadrática en <span class="math inline">\(\sqrt{p}\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-3-convertir-a-n%C3%BAmero-de-vivos-l_50t"><i class="fa fa-check"></i>Paso 3 — Convertir a número de vivos <span class="math inline">\(l_{50+t}\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-4-localizar-entre-edades-enteras"><i class="fa fa-check"></i>Paso 4 — Localizar entre edades enteras</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-5-interpolar-con-fuerza-constante"><i class="fa fa-check"></i>Paso 5 — Interpolar con fuerza constante</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#paso-6-restar-la-edad-inicial"><i class="fa fa-check"></i>Paso 6 — Restar la edad inicial</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#conexi%C3%B3n-conceptual"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-01.html"><a href="problema-01.html#respuesta-final"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html"><i class="fa fa-check"></i>Problema 02</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#enunciado-1"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-1"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#marco-conceptual-1"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#datos-y-supuestos-1"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#estrategia-de-soluci%C3%B3n-1"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#soluci%C3%B3n-paso-a-paso-detallada-1"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#paso-1-escribir-la-p%C3%A9rdida-en-forma-lineal-en-z"><i class="fa fa-check"></i>Paso 1 — Escribir la pérdida en forma lineal en <span class="math inline">\(Z\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#paso-2-expresar-media-y-varianza-en-t%C3%A9rminos-de-w"><i class="fa fa-check"></i>Paso 2 — Expresar media y varianza en términos de <span class="math inline">\(w\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#paso-3-obtener-la-raz%C3%B3n-ww-a-partir-de-las-dos-medias"><i class="fa fa-check"></i>Paso 3 — Obtener la razón <span class="math inline">\(w^*/w\)</span> a partir de las dos medias</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#paso-4-escalar-la-varianza"><i class="fa fa-check"></i>Paso 4 — Escalar la varianza</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-1"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#conexi%C3%B3n-conceptual-1"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-1"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-02.html"><a href="problema-02.html#respuesta-final-1"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html"><i class="fa fa-check"></i>Problema 03</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#enunciado-2"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-2"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#marco-conceptual-2"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#datos-y-supuestos-2"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#estrategia-de-soluci%C3%B3n-2"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#soluci%C3%B3n-paso-a-paso"><i class="fa fa-check"></i>5. Solución paso a paso</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#paso-1-plantear-la-lev-emp%C3%ADrica-en-d300-para-despejar-xy"><i class="fa fa-check"></i>Paso 1 — Plantear la LEV empírica en <span class="math inline">\(d=300\)</span> para despejar <span class="math inline">\(x+y\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#paso-2-evaluar-la-lev-emp%C3%ADrica-en-d1000"><i class="fa fa-check"></i>Paso 2 — Evaluar la LEV empírica en <span class="math inline">\(d=1{,}000\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-2"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#conexi%C3%B3n-conceptual-2"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-2"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-03.html"><a href="problema-03.html#respuesta-final-2"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html"><i class="fa fa-check"></i>Problema 04</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#enunciado-3"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-3"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#marco-conceptual-3"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#datos-y-supuestos-3"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#estrategia-de-soluci%C3%B3n-3"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#soluci%C3%B3n-paso-a-paso-detallada-2"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#paso-1-supervivientes-a-30-por-sexo"><i class="fa fa-check"></i>Paso 1 — Supervivientes a 30 por sexo</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#paso-2-pesos-condicionales-a-la-edad-30"><i class="fa fa-check"></i>Paso 2 — Pesos condicionales a la edad 30</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#paso-3-esperanza-de-vida-completa-por-sexo-a-30"><i class="fa fa-check"></i>Paso 3 — Esperanza de vida completa por sexo a 30</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#paso-4-promedio-ponderado-esperanza-de-la-mezcla"><i class="fa fa-check"></i>Paso 4 — Promedio ponderado (esperanza de la mezcla)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-3"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#conexi%C3%B3n-conceptual-3"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-3"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-04.html"><a href="problema-04.html#respuesta-final-3"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html"><i class="fa fa-check"></i>Problema 05</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#enunciado-4"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-4"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#marco-conceptual-4"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#datos-y-supuestos-4"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#estrategia-de-soluci%C3%B3n-4"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#soluci%C3%B3n-paso-a-paso-detallada-3"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-1-escalar-la-frecuencia-a-h-horas"><i class="fa fa-check"></i>Paso 1 — Escalar la frecuencia a <span class="math inline">\(h\)</span> horas</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-2-media-del-agregado-de-huevos"><i class="fa fa-check"></i>Paso 2 — Media del agregado de huevos</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-3-varianza-del-agregado-el-paso-cr%C3%ADtico"><i class="fa fa-check"></i>Paso 3 — Varianza del agregado (el paso crítico)</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-4-plantear-la-condici%C3%B3n-de-probabilidad"><i class="fa fa-check"></i>Paso 4 — Plantear la condición de probabilidad</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-5-resolver-la-cuadr%C3%A1tica-en-sqrth"><i class="fa fa-check"></i>Paso 5 — Resolver la cuadrática en <span class="math inline">\(\sqrt{h}\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#paso-6-verificar-los-enteros-vecinos"><i class="fa fa-check"></i>Paso 6 — Verificar los enteros vecinos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-4"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#conexi%C3%B3n-conceptual-4"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-4"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-05.html"><a href="problema-05.html#respuesta-final-4"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html"><i class="fa fa-check"></i>Problema 06</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#enunciado-5"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-5"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#marco-conceptual-5"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#datos-y-supuestos-5"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#estrategia-de-soluci%C3%B3n-5"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#soluci%C3%B3n-paso-a-paso-1"><i class="fa fa-check"></i>5. Solución paso a paso</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#paso-1-construir-la-funci%C3%B3n-de-pago-gx"><i class="fa fa-check"></i>Paso 1 — Construir la función de pago <span class="math inline">\(g(x)\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#paso-2-integrar-el-pago-sobre-cada-tramo"><i class="fa fa-check"></i>Paso 2 — Integrar el pago sobre cada tramo</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#paso-3-sumar-y-dividir-entre-10000"><i class="fa fa-check"></i>Paso 3 — Sumar y dividir entre 10,000</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#verificaci%C3%B3n-e-interpretaci%C3%B3n"><i class="fa fa-check"></i>6. Verificación e interpretación</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#conexi%C3%B3n-conceptual-5"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#errores-comunes"><i class="fa fa-check"></i>8. Errores comunes</a></li>
+<li class="chapter" data-level="" data-path="problema-06.html"><a href="problema-06.html#respuesta-final-5"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html"><i class="fa fa-check"></i>Problema 07</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#enunciado-6"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-6"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#marco-conceptual-6"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#datos-y-supuestos-6"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#estrategia-de-soluci%C3%B3n-6"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#soluci%C3%B3n-paso-a-paso-2"><i class="fa fa-check"></i>5. Solución paso a paso</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#paso-1-probabilidad-de-supervivencia-p_75"><i class="fa fa-check"></i>Paso 1 — Probabilidad de supervivencia <span class="math inline">\(p_{75}\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#paso-2-integral-del-primer-a%C3%B1o-fuerza-constante-7576"><i class="fa fa-check"></i>Paso 2 — Integral del primer año (fuerza constante, <span class="math inline">\([75,76]\)</span>)</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#paso-3-integral-del-segundo-a%C3%B1o-udd-7677"><i class="fa fa-check"></i>Paso 3 — Integral del segundo año (UDD, <span class="math inline">\([76,77]\)</span>)</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#paso-4-suma"><i class="fa fa-check"></i>Paso 4 — Suma</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-5"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#conexi%C3%B3n-conceptual-6"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#errores-comunes-1"><i class="fa fa-check"></i>8. Errores comunes</a></li>
+<li class="chapter" data-level="" data-path="problema-07.html"><a href="problema-07.html#respuesta-final-6"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html"><i class="fa fa-check"></i>Problema 08</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#enunciado-7"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-7"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#marco-conceptual-7"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#datos-y-supuestos-7"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#estrategia-de-soluci%C3%B3n-7"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#soluci%C3%B3n-paso-a-paso-detallada-4"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#paso-1-calcular-el-factor-de-descuento-v"><i class="fa fa-check"></i>Paso 1 — Calcular el factor de descuento <span class="math inline">\(v\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#paso-2-expresar-_5v-en-funci%C3%B3n-de-y-recursi%C3%B3n-5to-6"><i class="fa fa-check"></i>Paso 2 — Expresar <span class="math inline">\({}_{5}V\)</span> en función de <span class="math inline">\(Y\)</span> (recursión <span class="math inline">\(5\to 6\)</span>)</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#paso-3-sustituir-en-la-recursi%C3%B3n-4to-5-y-despejar-y"><i class="fa fa-check"></i>Paso 3 — Sustituir en la recursión <span class="math inline">\(4\to 5\)</span> y despejar <span class="math inline">\(Y\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-6"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#conexi%C3%B3n-conceptual-7"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-5"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-08.html"><a href="problema-08.html#respuesta-final-7"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html"><i class="fa fa-check"></i>Problema 09</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#enunciado-8"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-8"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#marco-conceptual-8"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#datos-y-supuestos-8"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#estrategia-de-soluci%C3%B3n-8"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#soluci%C3%B3n-paso-a-paso-3"><i class="fa fa-check"></i>5. Solución paso a paso</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-7"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#conexi%C3%B3n-conceptual-8"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#errores-comunes-con-el-porqu%C3%A9"><i class="fa fa-check"></i>8. Errores comunes (con el porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-09.html"><a href="problema-09.html#respuesta-final-8"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html"><i class="fa fa-check"></i>Problema 10</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#enunciado-9"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-9"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#marco-conceptual-9"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#datos-y-supuestos-9"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#estrategia-de-soluci%C3%B3n-9"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#soluci%C3%B3n-paso-a-paso-4"><i class="fa fa-check"></i>5. Solución paso a paso</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#paso-1-calcular-el-mle-hatbeta-media-muestral"><i class="fa fa-check"></i>Paso 1 — Calcular el MLE <span class="math inline">\(\hat\beta\)</span> (media muestral)</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#paso-2-evaluar-la-varianza-del-estimador"><i class="fa fa-check"></i>Paso 2 — Evaluar la varianza del estimador</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-8"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#conexi%C3%B3n-conceptual-9"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#errores-comunes-2"><i class="fa fa-check"></i>8. Errores comunes</a></li>
+<li class="chapter" data-level="" data-path="problema-10.html"><a href="problema-10.html#respuesta-final-9"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html"><i class="fa fa-check"></i>Problema 11</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#enunciado-10"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-10"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#marco-conceptual-10"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#datos-y-supuestos-10"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#estrategia-de-soluci%C3%B3n-10"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#soluci%C3%B3n-paso-a-paso-detallada-5"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#paso-1-primer-momento-bara_35overline5-a-delta0.04"><i class="fa fa-check"></i>Paso 1 — Primer momento <span class="math inline">\(\bar{A}_{35:\overline{5|}}\)</span> (a <span class="math inline">\(\delta=0.04\)</span>)</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#paso-2-segundo-momento-2bara_35overline5-a-2delta0.08"><i class="fa fa-check"></i>Paso 2 — Segundo momento <span class="math inline">\({}^{2}\bar{A}_{35:\overline{5|}}\)</span> (a <span class="math inline">\(2\delta=0.08\)</span>)</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#paso-3-varianza-de-z"><i class="fa fa-check"></i>Paso 3 — Varianza de <span class="math inline">\(Z\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#paso-4-factor-de-apalancamiento-y-varianza-de-la-p%C3%A9rdida"><i class="fa fa-check"></i>Paso 4 — Factor de apalancamiento y varianza de la pérdida</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-9"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#conexi%C3%B3n-conceptual-10"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-6"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-11.html"><a href="problema-11.html#respuesta-final-10"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html"><i class="fa fa-check"></i>Problema 12</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#enunciado-11"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-11"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#marco-conceptual-11"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#datos-y-supuestos-11"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#estrategia-de-soluci%C3%B3n-11"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#soluci%C3%B3n-paso-a-paso-detallada-6"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-1-determinar-el-periodo-de-trend"><i class="fa fa-check"></i>Paso 1 — Determinar el periodo de trend</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-2-factor-de-trend-y-p%C3%A9rdidas-proyectadas"><i class="fa fa-check"></i>Paso 2 — Factor de trend y pérdidas proyectadas</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-3-prima-a-nivel-actual-on-leveling"><i class="fa fa-check"></i>Paso 3 — Prima a nivel actual (on-leveling)</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-4-loss-ratio-proyectado"><i class="fa fa-check"></i>Paso 4 — Loss ratio proyectado</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-5-ratio-de-gasto-fijo"><i class="fa fa-check"></i>Paso 5 — Ratio de gasto fijo</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#paso-6-siniestralidad-permisible-y-cambio-indicado"><i class="fa fa-check"></i>Paso 6 — Siniestralidad permisible y cambio indicado</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-10"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#conexi%C3%B3n-conceptual-11"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-7"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-12.html"><a href="problema-12.html#respuesta-final-11"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html"><i class="fa fa-check"></i>Problema 13</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#enunciado-12"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-12"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#marco-conceptual-12"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#datos-y-supuestos-12"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#estrategia-de-soluci%C3%B3n-12"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#soluci%C3%B3n-paso-a-paso-detallada-7"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#paso-1-epv-del-beneficio"><i class="fa fa-check"></i>Paso 1 — EPV del beneficio</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#paso-2-epv-de-las-primas-modificadas"><i class="fa fa-check"></i>Paso 2 — EPV de las primas modificadas</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#paso-3-imponer-la-restricci%C3%B3n-y-resolver"><i class="fa fa-check"></i>Paso 3 — Imponer la restricción y resolver</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#paso-4-prima-de-primer-a%C3%B1o"><i class="fa fa-check"></i>Paso 4 — Prima de primer año</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-11"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#conexi%C3%B3n-conceptual-12"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#errores-comunes-con-explicaci%C3%B3n"><i class="fa fa-check"></i>8. Errores comunes (con explicación)</a></li>
+<li class="chapter" data-level="" data-path="problema-13.html"><a href="problema-13.html#respuesta-final-12"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html"><i class="fa fa-check"></i>Problema 14</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#enunciado-13"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-13"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#marco-conceptual-13"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#datos-y-supuestos-13"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#estrategia-de-soluci%C3%B3n-13"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#soluci%C3%B3n-paso-a-paso-detallada-8"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#paso-1-desplazar-la-fuerza-a-la-edad-20"><i class="fa fa-check"></i>Paso 1 — Desplazar la fuerza a la edad 20</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#paso-2-integrar-para-obtener-el-riesgo-acumulado-h_20t"><i class="fa fa-check"></i>Paso 2 — Integrar para obtener el riesgo acumulado <span class="math inline">\(H_{20}(t)\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#paso-3-construir-la-funci%C3%B3n-de-supervivencia-_tp_20"><i class="fa fa-check"></i>Paso 3 — Construir la función de supervivencia <span class="math inline">\({}_tp_{20}\)</span></a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#paso-4-imponer-la-condici%C3%B3n-de-mediana-y-despejar-m"><i class="fa fa-check"></i>Paso 4 — Imponer la condición de mediana y despejar <span class="math inline">\(m\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-12"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#conexi%C3%B3n-conceptual-13"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-8"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-14.html"><a href="problema-14.html#respuesta-final-13"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html"><i class="fa fa-check"></i>Problema 15</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#enunciado-14"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-14"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#marco-conceptual-14"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#datos-y-supuestos-14"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#estrategia-de-soluci%C3%B3n-14"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#soluci%C3%B3n-paso-a-paso-detallada-9"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-1-funciones-de-inter%C3%A9s"><i class="fa fa-check"></i>Paso 1 — Funciones de interés</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-2-anualidad-ddota_x-a-partir-de-la-prima-nivelada"><i class="fa fa-check"></i>Paso 2 — Anualidad <span class="math inline">\(\ddot{a}_x\)</span> a partir de la prima nivelada</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-3-ddota_x10-desde-la-reserva-neta-dato-ii"><i class="fa fa-check"></i>Paso 3 — <span class="math inline">\(\ddot{a}_{x+10}\)</span> desde la reserva neta (dato ii)</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-4-ddota_x1-desde-la-reserva-fpt-dato-iii"><i class="fa fa-check"></i>Paso 4 — <span class="math inline">\(\ddot{a}_{x+1}\)</span> desde la reserva FPT (dato iii)</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-5-q_x-v%C3%ADa-la-recursi%C3%B3n-de-anualidades"><i class="fa fa-check"></i>Paso 5 — <span class="math inline">\(q_x\)</span> vía la recursión de anualidades</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#paso-6-prima-de-valuaci%C3%B3n-del-primer-a%C3%B1o-alpha"><i class="fa fa-check"></i>Paso 6 — Prima de valuación del primer año <span class="math inline">\(\alpha\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-13"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#conexi%C3%B3n-conceptual-14"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-9"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-15.html"><a href="problema-15.html#respuesta-final-14"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html"><i class="fa fa-check"></i>Problema 16</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#enunciado-15"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-15"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#marco-conceptual-15"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#datos-y-supuestos-15"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#estrategia-de-soluci%C3%B3n-15"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#soluci%C3%B3n-paso-a-paso-detallada-10"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-1-probabilidad-de-sobrevivir-el-a%C3%B1o-1"><i class="fa fa-check"></i>Paso 1 — Probabilidad de sobrevivir el año 1</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-2-probabilidad-de-supervivencia-a-2-a%C3%B1os-en-cada-escenario"><i class="fa fa-check"></i>Paso 2 — Probabilidad de supervivencia a 2 años en cada escenario</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-3-esperanzas-condicionales-del-n%C3%BAmero-de-sobrevivientes"><i class="fa fa-check"></i>Paso 3 — Esperanzas condicionales del número de sobrevivientes</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-4-primer-t%C3%A9rmino-etextvarnmid-i-riesgo-de-mortalidad"><i class="fa fa-check"></i>Paso 4 — Primer término: <span class="math inline">\(E[\text{Var}(N\mid I)]\)</span> (riesgo de mortalidad)</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-5-segundo-t%C3%A9rmino-textvarenmid-i-riesgo-del-shock-com%C3%BAn"><i class="fa fa-check"></i>Paso 5 — Segundo término: <span class="math inline">\(\text{Var}(E[N\mid I])\)</span> (riesgo del shock común)</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#paso-6-varianza-total-y-desviaci%C3%B3n-est%C3%A1ndar"><i class="fa fa-check"></i>Paso 6 — Varianza total y desviación estándar</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-14"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#conexi%C3%B3n-conceptual-15"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-10"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-16.html"><a href="problema-16.html#respuesta-final-15"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html"><i class="fa fa-check"></i>Problema 17</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#enunciado-16"><i class="fa fa-check"></i>0. Enunciado</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-16"><i class="fa fa-check"></i>1. Qué se está evaluando (alineación SOA)</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#marco-conceptual-16"><i class="fa fa-check"></i>2. Marco conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#datos-y-supuestos-16"><i class="fa fa-check"></i>3. Datos y supuestos</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#estrategia-de-soluci%C3%B3n-16"><i class="fa fa-check"></i>4. Estrategia de solución</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#soluci%C3%B3n-paso-a-paso-detallada-11"><i class="fa fa-check"></i>5. Solución paso a paso (detallada)</a>
+<ul>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#paso-1-ubicar-al-caballo-en-la-fila-select-correcta"><i class="fa fa-check"></i>Paso 1 — Ubicar al caballo en la fila select correcta</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#paso-2-probabilidad-de-sobrevivir-de-la-edad-3-a-la-edad-7"><i class="fa fa-check"></i>Paso 2 — Probabilidad de sobrevivir de la edad 3 a la edad 7</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#paso-3-probabilidad-de-morir-entre-la-edad-3-y-la-edad-7"><i class="fa fa-check"></i>Paso 3 — Probabilidad de morir entre la edad 3 y la edad 7</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#paso-4-modelar-el-n%C3%BAmero-de-muertes-y-calcular-la-varianza"><i class="fa fa-check"></i>Paso 4 — Modelar el número de muertes y calcular la varianza</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-15"><i class="fa fa-check"></i>6. Verificación e interpretación del resultado</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#conexi%C3%B3n-conceptual-16"><i class="fa fa-check"></i>7. Conexión conceptual</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-11"><i class="fa fa-check"></i>8. Errores comunes (con explicación del porqué)</a></li>
+<li class="chapter" data-level="" data-path="problema-17.html"><a href="problema-17.html#respuesta-final-16"><i class="fa fa-check"></i>9. Respuesta final</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Examen 03</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="problema-14" class="section level1 hasAnchor">
+<h1>Problema 14<a href="problema-14.html#problema-14" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<hr />
+
+<div id="enunciado-13" class="section level2 hasAnchor">
+<h2>0. Enunciado<a href="problema-14.html#enunciado-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>You are given:</strong></p>
+<p><span class="math display">\[\mu_x = \sqrt{\frac{1}{80-x}}, \quad 0 \le x &lt; 80\]</span></p>
+<p><strong>Calculate the median future lifetime of <span class="math inline">\((20)\)</span>.</strong></p>
+<ul>
+<li><strong>A.</strong> 5.25<br />
+</li>
+<li><strong>B.</strong> 6.08<br />
+</li>
+<li><strong>C.</strong> 8.52<br />
+</li>
+<li><strong>D.</strong> 26.08<br />
+</li>
+<li><strong>E.</strong> 30.00</li>
+</ul>
+<hr />
+</div>
+<div id="qué-se-está-evaluando-alineación-soa-13" class="section level2 hasAnchor">
+<h2>1. Qué se está evaluando (alineación SOA)<a href="problema-14.html#qu%C3%A9-se-est%C3%A1-evaluando-alineaci%C3%B3n-soa-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Este problema cae dentro del <strong>Topic 1 (Survival Models)</strong>, específicamente en los Learning Outcomes sobre:</p>
+<ul>
+<li><strong>Relación entre fuerza de mortalidad y funciones de supervivencia</strong>: dado <span class="math inline">\(\mu_x\)</span>, recuperar <span class="math inline">\({}_tp_x\)</span>.<br />
+</li>
+<li><strong>Cuantiles del tiempo futuro de vida</strong>: cálculo de la <strong>mediana</strong> de <span class="math inline">\(T_x\)</span> (la variable aleatoria “tiempo futuro de vida” de una persona de edad <span class="math inline">\(x\)</span>).</li>
+</ul>
+<p><strong>Señales del enunciado que lo confirman:</strong> te dan una <strong>fuerza de mortalidad funcional</strong> <span class="math inline">\(\mu_x\)</span> (no una tabla), y piden la <strong>mediana</strong> del tiempo futuro de vida. Eso obliga a (i) integrar la fuerza para construir <span class="math inline">\({}_tp_{20}\)</span> y (ii) resolver la ecuación del cuantil. No se usa la SULT aquí precisamente porque el modelo de mortalidad es uno propio del problema.</p>
+<p><strong>Conceptos previos necesarios:</strong> definición de <span class="math inline">\(T_x\)</span>, la identidad <span class="math inline">\({}_tp_x = \exp(-\int_0^t \mu_{x+s}\,ds)\)</span>, e integración de potencias.</p>
+<hr />
+</div>
+<div id="marco-conceptual-13" class="section level2 hasAnchor">
+<h2>2. Marco conceptual<a href="problema-14.html#marco-conceptual-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La <strong>fuerza de mortalidad</strong> <span class="math inline">\(\mu_x\)</span> es la tasa instantánea de fallecimiento: <span class="math inline">\(\mu_x = -\frac{d}{dx}\ln S_0(x)\)</span>. Intuitivamente, <span class="math inline">\(\mu_x\,dt\)</span> es (aproximadamente) la probabilidad de morir en el siguiente instante <span class="math inline">\(dt\)</span>, condicionada a haber sobrevivido hasta <span class="math inline">\(x\)</span>. Aquí <span class="math inline">\(\mu_x = (80-x)^{-1/2}\)</span> <strong>crece sin cota</strong> cuando <span class="math inline">\(x \to 80\)</span>, y ya en <span class="math inline">\(x=20\)</span> vale <span class="math inline">\(\sqrt{1/60}\approx 0.129\)</span>, que es <strong>altísima</strong> (en una tabla realista la fuerza a esa edad es del orden de <span class="math inline">\(0.0005\)</span>). Esto anticipa que la vida mediana futura será <strong>corta</strong>, no de décadas.</p>
+<p>La pieza central es la fórmula que conecta fuerza y supervivencia:</p>
+<p><span class="math display">\[  
+{}_tp_x = \exp\!\left(-\int_0^t \mu_{x+s}\,ds\right)  
+\]</span></p>
+<p>El argumento del exponencial, <span class="math inline">\(H_x(t)=\int_0^t \mu_{x+s}\,ds\)</span>, es la <strong>función de riesgo acumulada</strong> (cumulative hazard): acumula toda la “presión de mortalidad” sufrida entre <span class="math inline">\(x\)</span> y <span class="math inline">\(x+t\)</span>. La supervivencia es <span class="math inline">\(e^{-H}\)</span>, igual que en cualquier proceso de fallo.</p>
+<p>La <strong>mediana del tiempo futuro de vida</strong>, <span class="math inline">\(m\)</span>, es el valor que parte la distribución de <span class="math inline">\(T_x\)</span> en dos mitades: la persona tiene 50% de probabilidad de sobrevivir más de <span class="math inline">\(m\)</span> años y 50% de morir antes. Formalmente se define por:</p>
+<p><span class="math display">\[  
+{}_mp_x = 0.5 \quad\Longleftrightarrow\quad \Pr(T_x &gt; m) = 0.5  
+\]</span></p>
+<p>Un <strong>enfoque alternativo</strong> sería trabajar con <span class="math inline">\(S_0(x)=\exp(-\int_0^x \mu_s\,ds)\)</span> y resolver <span class="math inline">\(S_0(20+m)/S_0(20)=0.5\)</span>; es equivalente pero introduce más álgebra. Integrar directamente desde la edad 20 (desplazando la variable) es <strong>más limpio y menos propenso a error</strong>.</p>
+<hr />
+</div>
+<div id="datos-y-supuestos-13" class="section level2 hasAnchor">
+<h2>3. Datos y supuestos<a href="problema-14.html#datos-y-supuestos-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Significado</th>
+<th>Valor / expresión</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\mu_x\)</span></td>
+<td>Fuerza de mortalidad a la edad <span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\((80-x)^{-1/2}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x\)</span></td>
+<td>Edad inicial del asegurado</td>
+<td><span class="math inline">\(20\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T_{20}\)</span></td>
+<td>Tiempo futuro de vida de (20)</td>
+<td>variable aleatoria</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(m\)</span></td>
+<td>Mediana de <span class="math inline">\(T_{20}\)</span> (lo buscado)</td>
+<td>incógnita</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\({}_tp_{20}\)</span></td>
+<td>Prob. de que (20) sobreviva <span class="math inline">\(t\)</span> años</td>
+<td><span class="math inline">\(\exp(-\int_0^t\mu_{20+s}ds)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Supuestos:</strong><br />
+- <strong>El modelo de mortalidad es exactamente <span class="math inline">\(\mu_x=(80-x)^{-1/2}\)</span></strong> sobre todo el rango <span class="math inline">\([0,80)\)</span>. Es razonable porque el enunciado lo da explícitamente; no se invoca la SULT.<br />
+- <strong>No hay ambigüedad de timing</strong> (es un modelo en tiempo continuo, <span class="math inline">\(T_{20}\)</span> continuo), así que la mediana se obtiene resolviendo una ecuación continua, sin aproximaciones tipo UDD.</p>
+<hr />
+</div>
+<div id="estrategia-de-solución-13" class="section level2 hasAnchor">
+<h2>4. Estrategia de solución<a href="problema-14.html#estrategia-de-soluci%C3%B3n-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El plan tiene tres pasos. <strong>Primero</strong>, desplazo la edad: defino <span class="math inline">\(\mu_{20+s}=(60-s)^{-1/2}\)</span> para que la integral arranque en <span class="math inline">\(s=0\)</span>. <strong>Segundo</strong>, integro la fuerza para obtener el riesgo acumulado <span class="math inline">\(H_{20}(t)\)</span> y, vía <span class="math inline">\([R1]\)</span>, construyo <span class="math inline">\({}_tp_{20}=e^{-H_{20}(t)}\)</span>. <strong>Tercero</strong>, impongo la condición de mediana <span class="math inline">\({}_mp_{20}=0.5\)</span>, tomo logaritmos y despejo <span class="math inline">\(m\)</span>.</p>
+<p>La fórmula principal es la identidad fuerza→supervivencia <span class="math inline">\([R1, Formula Sheet:\ {}_tp_x=\exp(-\int_0^t\mu_{x+s}ds)]\)</span> y la definición de cuantil mediano <span class="math inline">\([R1, Formula Sheet:\ {}_mp_x=0.5]\)</span>. <strong>No uso la SULT (R2)</strong> porque el problema impone su propia <span class="math inline">\(\mu_x\)</span>; usar la tabla sería un error conceptual. La integral <span class="math inline">\(\int(60-s)^{-1/2}ds\)</span> es elemental, así que la derivo a mano (ningún recurso tabula este caso particular).</p>
+<hr />
+</div>
+<div id="solución-paso-a-paso-detallada-8" class="section level2 hasAnchor">
+<h2>5. Solución paso a paso (detallada)<a href="problema-14.html#soluci%C3%B3n-paso-a-paso-detallada-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="paso-1-desplazar-la-fuerza-a-la-edad-20" class="section level3 hasAnchor">
+<h3>Paso 1 — Desplazar la fuerza a la edad 20<a href="problema-14.html#paso-1-desplazar-la-fuerza-a-la-edad-20" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Qué hago:</strong> escribo la fuerza que enfrenta (20) tras <span class="math inline">\(s\)</span> años, sustituyendo <span class="math inline">\(x\to 20+s\)</span>.</p>
+<p><strong>Por qué:</strong> la persona ya tiene 20 años; la integral del riesgo se mide <em>desde</em> esa edad, no desde 0.</p>
+<p><span class="math display">\[  
+\mu_{20+s}=\frac{1}{\sqrt{80-(20+s)}}=\frac{1}{\sqrt{60-s}}=(60-s)^{-1/2}  
+\]</span></p>
+<p><strong>Interpretación:</strong> en <span class="math inline">\(s=0\)</span> (justo a los 20) la fuerza es <span class="math inline">\(1/\sqrt{60}\approx 0.1291\)</span>, y aumenta a medida que <span class="math inline">\(s\)</span> crece hacia 60 (edad límite 80).</p>
+<hr />
+</div>
+<div id="paso-2-integrar-para-obtener-el-riesgo-acumulado-h_20t" class="section level3 hasAnchor">
+<h3>Paso 2 — Integrar para obtener el riesgo acumulado <span class="math inline">\(H_{20}(t)\)</span><a href="problema-14.html#paso-2-integrar-para-obtener-el-riesgo-acumulado-h_20t" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Qué hago:</strong> calculo <span class="math inline">\(H_{20}(t)=\int_0^t (60-s)^{-1/2}\,ds\)</span>.</p>
+<p><strong>Por qué:</strong> el exponente de la supervivencia es la integral de la fuerza <span class="math inline">\([R1]\)</span>.</p>
+<p><strong>Fórmula y álgebra</strong> — uso el cambio <span class="math inline">\(u=60-s\)</span>, <span class="math inline">\(du=-ds\)</span> (límites: <span class="math inline">\(s=0\Rightarrow u=60\)</span>; <span class="math inline">\(s=t\Rightarrow u=60-t\)</span>):</p>
+<p><span class="math display">\[  
+\int_0^t (60-s)^{-1/2}ds=\int_{60-t}^{60}u^{-1/2}\,du=\Big[\,2u^{1/2}\,\Big]_{60-t}^{60}=2\sqrt{60}-2\sqrt{60-t}  
+\]</span></p>
+<p><strong>Resultado intermedio:</strong></p>
+<p><span class="math display">\[  
+H_{20}(t)=2\sqrt{60}-2\sqrt{60-t}  
+\]</span></p>
+<p><strong>Interpretación:</strong> el riesgo acumulado crece desde 0 (en <span class="math inline">\(t=0\)</span>) y tiende a <span class="math inline">\(2\sqrt{60}\approx 15.49\)</span> cuando <span class="math inline">\(t\to 60\)</span>, lo que hace <span class="math inline">\({}_tp_{20}\to e^{-15.49}\approx 0\)</span>: nadie sobrevive a la edad 80, como exige el modelo.</p>
+<hr />
+</div>
+<div id="paso-3-construir-la-función-de-supervivencia-_tp_20" class="section level3 hasAnchor">
+<h3>Paso 3 — Construir la función de supervivencia <span class="math inline">\({}_tp_{20}\)</span><a href="problema-14.html#paso-3-construir-la-funci%C3%B3n-de-supervivencia-_tp_20" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Qué hago:</strong> aplico <span class="math inline">\({}_tp_{20}=e^{-H_{20}(t)}\)</span>.</p>
+<p><strong>Fórmula:</strong> <span class="math inline">\([R1, Formula Sheet:\ {}_tp_x=\exp(-\int_0^t\mu_{x+s}ds)]\)</span> — esta identidad recupera la supervivencia a partir de la fuerza acumulada.</p>
+<p><span class="math display">\[  
+{}_tp_{20}=\exp\!\big(-(2\sqrt{60}-2\sqrt{60-t})\big)=\exp\!\big(2\sqrt{60-t}-2\sqrt{60}\big)  
+\]</span></p>
+<p><strong>Interpretación:</strong> es una supervivencia válida — vale 1 en <span class="math inline">\(t=0\)</span> y decrece monótonamente — lo que confirma que el setup es correcto.</p>
+<hr />
+</div>
+<div id="paso-4-imponer-la-condición-de-mediana-y-despejar-m" class="section level3 hasAnchor">
+<h3>Paso 4 — Imponer la condición de mediana y despejar <span class="math inline">\(m\)</span><a href="problema-14.html#paso-4-imponer-la-condici%C3%B3n-de-mediana-y-despejar-m" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Qué hago:</strong> igualo <span class="math inline">\({}_mp_{20}=0.5\)</span> y resuelvo.</p>
+<p><strong>Por qué:</strong> la mediana es, por definición, el plazo con 50% de supervivencia <span class="math inline">\([R1]\)</span>.</p>
+<p><span class="math display">\[  
+\exp\!\big(2\sqrt{60-m}-2\sqrt{60}\big)=0.5  
+\]</span></p>
+<p>Tomo logaritmo natural a ambos lados:</p>
+<p><span class="math display">\[  
+2\sqrt{60-m}-2\sqrt{60}=\ln(0.5)=-0.693147  
+\]</span></p>
+<p>Despejo <span class="math inline">\(\sqrt{60-m}\)</span> (con <span class="math inline">\(2\sqrt{60}=15.491933\)</span>):</p>
+<p><span class="math display">\[  
+2\sqrt{60-m}=15.491933-0.693147=14.798786  
+\]</span><br />
+<span class="math display">\[  
+\sqrt{60-m}=7.399393  
+\]</span></p>
+<p>Elevo al cuadrado:</p>
+<p><span class="math display">\[  
+60-m=54.751020  
+\]</span><br />
+<span class="math display">\[  
+\boxed{\,m=60-54.751020=5.24898\approx 5.25\,}  
+\]</span></p>
+<p><strong>Interpretación:</strong> una persona de 20 años bajo <em>este</em> modelo tiene 50% de probabilidad de morir en los próximos <strong>≈5.25 años</strong>. Es corto porque la fuerza de mortalidad impuesta es enorme.</p>
+<hr />
+</div>
+</div>
+<div id="verificación-e-interpretación-del-resultado-12" class="section level2 hasAnchor">
+<h2>6. Verificación e interpretación del resultado<a href="problema-14.html#verificaci%C3%B3n-e-interpretaci%C3%B3n-del-resultado-12" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Chequeo numérico (back-substitution):</strong></p>
+<p><span class="math display">\[  
+{}_{5.25}p_{20}=\exp\!\big(2\sqrt{54.75}-2\sqrt{60}\big)=\exp(14.79865-15.49193)=\exp(-0.69328)=0.49997\approx 0.5 \checkmark  
+\]</span></p>
+<p><strong>Chequeo lógico/dimensional:</strong> <span class="math inline">\(m&gt;0\)</span>, <span class="math inline">\(m&lt;60\)</span> (dentro del rango admisible), y <span class="math inline">\({}_mp_{20}\in[0,1]\)</span>. Todo consistente.</p>
+<p><strong>Chequeo de magnitud:</strong> con <span class="math inline">\(\mu_{20}\approx 0.129\)</span>, una aproximación de <strong>fuerza constante</strong> daría <span class="math inline">\(m\approx \ln 2/0.129 \approx 5.37\)</span>, muy cerca de 5.25. Como la fuerza <em>crece</em> con la edad, la mediana real es un poco menor que esa estimación — exactamente lo que observamos. Esto confirma el orden de magnitud.</p>
+<p><strong>Descarte de distractoras:</strong></p>
+<ul>
+<li><strong>B = 6.08</strong> — Trampa de calcular la mediana de <strong>(0)</strong> en vez de (20): repitiendo el cálculo con <span class="math inline">\(\mu_{0+s}=(80-s)^{-1/2}\)</span> se obtiene <span class="math inline">\(2\sqrt{80}-2\sqrt{80-m}=0.6931 \Rightarrow m\approx 6.08\)</span>. Error de <strong>no desplazar la edad</strong>.<br />
+</li>
+<li><strong>E = 30.00</strong> — Trampa de <strong>de Moivre/uniforme</strong>: si uno (erróneamente) asume muertes uniformes entre 20 y 80, la mediana sería <span class="math inline">\((80-20)/2=30\)</span>. Ignora por completo que esta <span class="math inline">\(\mu_x\)</span> no es la de de Moivre.<br />
+</li>
+<li><strong>D = 26.08</strong> — Distractora de magnitud “grande”, de la misma familia que E: resulta de razonar como si la mortalidad fuera baja/uniforme y la vida mediana fuera de décadas. La pista de que es falsa es la fuerza tan alta de partida.<br />
+</li>
+<li><strong>C = 8.52</strong> — Producto de un <strong>error algebraico</strong> al integrar (olvidar el factor 2, o despejar mal el logaritmo). No resiste el back-substitution.</li>
+</ul>
+<p>La única opción que satisface <span class="math inline">\({}_mp_{20}=0.5\)</span> es <strong>A</strong>.</p>
+<hr />
+</div>
+<div id="conexión-conceptual-13" class="section level2 hasAnchor">
+<h2>7. Conexión conceptual<a href="problema-14.html#conexi%C3%B3n-conceptual-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Este problema es el patrón canónico <strong>“dada <span class="math inline">\(\mu_x\)</span>, encuentra un cuantil de <span class="math inline">\(T_x\)</span>”</strong>, que reaparece constantemente en Survival Models. La estructura (integrar la fuerza → exponenciar → resolver el cuantil) es idéntica si en lugar de la mediana piden el <strong>percentil 25</strong> (resolver <span class="math inline">\({}_tp_x=0.75\)</span>) o un <strong>percentil <span class="math inline">\(p\)</span></strong> (<span class="math inline">\({}_tp_x=1-p\)</span>).</p>
+<p>Variaciones que cambian el método: si dieran <span class="math inline">\(\mu_x\)</span> <strong>constante</strong>, <span class="math inline">\({}_tp_x=e^{-\mu t}\)</span> y <span class="math inline">\(m=\ln 2/\mu\)</span> directo; si fuera <strong>Gompertz/Makeham</strong>, la integral de la fuerza tendría forma exponencial; si en vez de un modelo funcional dieran la <strong>SULT (R2)</strong>, buscarías el <span class="math inline">\(t\)</span> tal que <span class="math inline">\(l_{20+t}/l_{20}=0.5\)</span> interpolando en la tabla. <strong>Problema relacionado del syllabus:</strong> cualquiera que pida <span class="math inline">\(\mathring{e}_x\)</span> (esperanza de vida) bajo de Moivre generalizado refuerza la misma maquinaria de integración de <span class="math inline">\(\mu_x\)</span>.</p>
+<hr />
+</div>
+<div id="errores-comunes-con-explicación-del-porqué-8" class="section level2 hasAnchor">
+<h2>8. Errores comunes (con explicación del porqué)<a href="problema-14.html#errores-comunes-con-explicaci%C3%B3n-del-porqu%C3%A9-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>No desplazar la edad en la integral</strong> (usar <span class="math inline">\(80-s\)</span> en lugar de <span class="math inline">\(60-s\)</span>). Es atractivo porque uno copia la <span class="math inline">\(\mu_x\)</span> tal cual sin sustituir <span class="math inline">\(x=20+s\)</span>; produce exactamente la respuesta de (0), <strong>B = 6.08</strong>. <em>Evítalo</em> escribiendo siempre <span class="math inline">\(\mu_{x+s}\)</span> explícitamente antes de integrar.<br />
+</li>
+<li><strong>Confundir mediana con media (esperanza de vida <span class="math inline">\(\mathring{e}_{20}\)</span>).</strong> La media exige <span class="math inline">\(\int_0^\infty {}_tp_{20}\,dt\)</span>; la mediana solo exige resolver <span class="math inline">\({}_tp=0.5\)</span>. Son números distintos. Lee bien si piden “median” o “complete/curtate expectation”.<br />
+</li>
+<li><strong>Asumir de Moivre por inercia</strong> porque hay un “80” en la fórmula. Esto lleva a <span class="math inline">\(m=30\)</span> (<strong>E</strong>). Pero <span class="math inline">\(\mu_x=(80-x)^{-1/2}\)</span> <strong>no</strong> es de Moivre (la de De Moivre es <span class="math inline">\(\mu_x=(80-x)^{-1}\)</span>). Verifica siempre la forma exacta de la fuerza.<br />
+</li>
+<li><strong>Olvidar el factor 2 al integrar <span class="math inline">\(u^{-1/2}\)</span></strong> (<span class="math inline">\(\int u^{-1/2}du=2u^{1/2}\)</span>, no <span class="math inline">\(u^{1/2}\)</span>) o equivocar el signo de <span class="math inline">\(\ln(0.5)\)</span>. Cualquiera de los dos descuadra el álgebra y genera distractoras como <strong>C</strong>. El back-substitution lo detecta de inmediato.<br />
+</li>
+<li><strong>Error de notación fuerza vs. probabilidad:</strong> tratar <span class="math inline">\(\mu_x\)</span> como si fuera <span class="math inline">\({}_1q_x\)</span> o <span class="math inline">\({}_tp_x\)</span> directamente, saltándose la exponencial <span class="math inline">\(e^{-\int\mu}\)</span>. La fuerza es una <em>tasa instantánea</em>, no una probabilidad; siempre debe pasar por la integral y el exponencial.</li>
+</ul>
+<hr />
+</div>
+<div id="respuesta-final-13" class="section level2 hasAnchor">
+<h2>9. Respuesta final<a href="problema-14.html#respuesta-final-13" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>A) 5.25</strong> — La vida mediana futura de (20) es <span class="math inline">\(m \approx 5.25\)</span> años.</p>
+<p><strong>Takeaway:</strong> <em>“Mediana de <span class="math inline">\(T_x\)</span> = resolver <span class="math inline">\({}_mp_x=0.5\)</span>, lo que equivale a riesgo acumulado <span class="math inline">\(H_x(m)=\ln 2\)</span>.”</em> Siempre desplaza la edad (<span class="math inline">\(\mu_{x+s}\)</span>) antes de integrar.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="problema-13.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="problema-15.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  },
+  "themes": {
+    "theme": "united",
+    "edit": null,
+    "history": null
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
